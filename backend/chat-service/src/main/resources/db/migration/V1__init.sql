@@ -1,0 +1,9 @@
+CREATE TABLE chat_rooms (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+
+    room_id BIGINT NOT NULL,
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    UNIQUE (room_id)
+);
